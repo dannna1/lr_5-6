@@ -1,4 +1,5 @@
-﻿const N = 20;
+const
+  N = 5;
 var
 a: array [1..N] of integer;
 i,hx, hn, max, min, p: integer;
@@ -20,8 +21,8 @@ repeat
       max:=a[i+1];
       hx:=i+1;
         end;
-    if min>a[i+1] then
-        begin 
+    if (a[i]>=0) and (min>a[i+1])then
+    begin
       min:=a[i+1];
       hn:=i+1;
         end;
